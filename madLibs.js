@@ -26,7 +26,9 @@ var nextPrompt = function() {
 }
 
 var showFinal = function() {
-  $('.prompt').html(answers[0] + ' ' + answers[1] + ' ' + answers[2]);
+  $('.prompt').html('This is the story of <span class="fill">' + answers[0] + '</span> and the <span class="fill">' + answers[1] + '</span> <span class="fill">' + answers[2] + '</span>.');
+  // hide button
+  $('button').hide();
 }
 
 //run nextPrompt function when button is clicked
