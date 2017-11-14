@@ -20,9 +20,13 @@ var nextPrompt = function() {
     // move the next prompt into variable currentPrompt
     currentPrompt = currentPrompt + 1;  
   } else {
-    $('.prompt').html("that's all for now!");
-    alert(answers);
+    // $('.prompt').html("that's all for now!");
+    showFinal();
   }
+}
+
+var showFinal = function() {
+  $('.prompt').html(answers[0] + ' ' + answers[1] + ' ' + answers[2]);
 }
 
 //run nextPrompt function when button is clicked
